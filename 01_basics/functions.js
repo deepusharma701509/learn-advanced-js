@@ -96,3 +96,44 @@ const  emptyObj={}
 if(Object.keys(emptyObj).length===0){
     console.log(emptyObj)
 }
+
+const coding=["javascript","js","ruby","c++","swift"]
+// coding.forEach(printMe)
+
+// function printMe(item){
+// console.log(item)
+// }
+
+// coding.forEach((item,index,array)=>{
+// console.log(item,index,array);
+
+// })
+
+// const myCoding=[
+//     {language:"javascript"}
+// ]
+
+const values=coding.forEach((item)=>{
+    console.log(item);
+    return item;
+    
+})
+console.log(values);
+
+const myNums=[1,2,3,4,5,6,7,8,9,10];
+// const newNums=myNums.filter((num)=>{
+//     return num>4
+// });
+// console.log(newNums);
+
+const newNums=[]
+
+myNums.forEach((num)=>{
+    if(num>4){
+        newNums.push(num)
+    }
+})
+
+console.log(newNums);
+
+
